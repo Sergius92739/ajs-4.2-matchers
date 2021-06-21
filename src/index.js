@@ -1,1 +1,1 @@
-import './js/playerList';
+import './js/app';

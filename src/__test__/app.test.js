@@ -1,6 +1,6 @@
-import sortPlayerList from '../js/playerList';
+import sortPlayerList from '../js/app';
 
-test('Проверяем корректность сортировки', () => {
+test('Checking the correctness of sorting', () => {
   const data = [
     { name: 'мечник', health: 10 },
     { name: 'маг', health: 100 },
@@ -13,5 +13,6 @@ test('Проверяем корректность сортировки', () => {
     { name: 'мечник', health: 10 },
   ];
 
-  expect(sortPlayerList(data)).toEqual(sortPlayerList(expected));
+  expect(sortPlayerList(data)).toEqual(expected);
+  expect(sortPlayerList(data)).not.toBe(expected);
 });
